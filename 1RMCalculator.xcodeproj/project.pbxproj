@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		A8CCE6891F9FB84B003E3CD0 /* input.txt in Resources */ = {isa = PBXBuildFile; fileRef = A8CCE6881F9FB84B003E3CD0 /* input.txt */; };
 		A8CCE68B1F9FB887003E3CD0 /* OneRepMaxHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CCE68A1F9FB887003E3CD0 /* OneRepMaxHistoryViewController.swift */; };
-		A8CCE6951F9FBA30003E3CD0 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8CCE6921F9FBA08003E3CD0 /* Charts.framework */; };
-		A8CCE6961F9FBA30003E3CD0 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A8CCE6921F9FBA08003E3CD0 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A8CCE69D1FA0EAF4003E3CD0 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8CCE69C1FA0EAF4003E3CD0 /* Charts.framework */; };
 		A8FC03B31F9E375400A50A52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FC03B21F9E375400A50A52 /* AppDelegate.swift */; };
 		A8FC03B51F9E375400A50A52 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FC03B41F9E375400A50A52 /* MainViewController.swift */; };
 		A8FC03B81F9E375400A50A52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8FC03B61F9E375400A50A52 /* Main.storyboard */; };
@@ -24,27 +23,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A8CCE6911F9FBA08003E3CD0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A8CCE68C1F9FBA08003E3CD0 /* Charts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
-			remoteInfo = Charts;
-		};
-		A8CCE6931F9FBA08003E3CD0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A8CCE68C1F9FBA08003E3CD0 /* Charts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
-			remoteInfo = ChartsTests;
-		};
-		A8CCE6971F9FBA30003E3CD0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A8CCE68C1F9FBA08003E3CD0 /* Charts.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = A58A4ED274A941CA248EA921;
-			remoteInfo = Charts;
-		};
 		A8FC03C41F9E375400A50A52 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A8FC03A71F9E375400A50A52 /* Project object */;
@@ -61,7 +39,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A8CCE6961F9FBA30003E3CD0 /* Charts.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,7 +48,7 @@
 /* Begin PBXFileReference section */
 		A8CCE6881F9FB84B003E3CD0 /* input.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = input.txt; sourceTree = "<group>"; };
 		A8CCE68A1F9FB887003E3CD0 /* OneRepMaxHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneRepMaxHistoryViewController.swift; sourceTree = "<group>"; };
-		A8CCE68C1F9FBA08003E3CD0 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = Charts/Charts.xcodeproj; sourceTree = "<group>"; };
+		A8CCE69C1FA0EAF4003E3CD0 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = Carthage/Build/iOS/Charts.framework; sourceTree = "<group>"; };
 		A8FC03AF1F9E375400A50A52 /* 1RMCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 1RMCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8FC03B21F9E375400A50A52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8FC03B41F9E375400A50A52 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -93,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8CCE6951F9FBA30003E3CD0 /* Charts.framework in Frameworks */,
+				A8CCE69D1FA0EAF4003E3CD0 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,22 +84,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A8CCE68D1F9FBA08003E3CD0 /* Products */ = {
+		A8CCE69B1FA0EAF4003E3CD0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A8CCE6921F9FBA08003E3CD0 /* Charts.framework */,
-				A8CCE6941F9FBA08003E3CD0 /* ChartsTests.xctest */,
+				A8CCE69C1FA0EAF4003E3CD0 /* Charts.framework */,
 			);
-			name = Products;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		A8FC03A61F9E375400A50A52 = {
 			isa = PBXGroup;
 			children = (
 				A8FC03B11F9E375400A50A52 /* 1RMCalculator */,
-				A8CCE68C1F9FBA08003E3CD0 /* Charts.xcodeproj */,
 				A8FC03C61F9E375400A50A52 /* 1RMCalculatorTests */,
 				A8FC03B01F9E375400A50A52 /* Products */,
+				A8CCE69B1FA0EAF4003E3CD0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -174,11 +150,11 @@
 				A8FC03AC1F9E375400A50A52 /* Frameworks */,
 				A8FC03AD1F9E375400A50A52 /* Resources */,
 				A8CCE6991F9FBA31003E3CD0 /* Embed Frameworks */,
+				A8CCE69E1FA0EB2D003E3CD0 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A8CCE6981F9FBA30003E3CD0 /* PBXTargetDependency */,
 			);
 			name = 1RMCalculator;
 			productName = 1RMCalculator;
@@ -235,12 +211,6 @@
 			mainGroup = A8FC03A61F9E375400A50A52;
 			productRefGroup = A8FC03B01F9E375400A50A52 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = A8CCE68D1F9FBA08003E3CD0 /* Products */;
-					ProjectRef = A8CCE68C1F9FBA08003E3CD0 /* Charts.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				A8FC03AE1F9E375400A50A52 /* 1RMCalculator */,
@@ -248,23 +218,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		A8CCE6921F9FBA08003E3CD0 /* Charts.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Charts.framework;
-			remoteRef = A8CCE6911F9FBA08003E3CD0 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A8CCE6941F9FBA08003E3CD0 /* ChartsTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ChartsTests.xctest;
-			remoteRef = A8CCE6931F9FBA08003E3CD0 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A8FC03AD1F9E375400A50A52 /* Resources */ = {
@@ -286,6 +239,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A8CCE69E1FA0EB2D003E3CD0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Charts.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A8FC03AB1F9E375400A50A52 /* Sources */ = {
@@ -313,11 +283,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A8CCE6981F9FBA30003E3CD0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Charts;
-			targetProxy = A8CCE6971F9FBA30003E3CD0 /* PBXContainerItemProxy */;
-		};
 		A8FC03C51F9E375400A50A52 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A8FC03AE1F9E375400A50A52 /* 1RMCalculator */;
@@ -459,6 +424,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q53E8Y7A46;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = 1RMCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.1rmcalculator.-RMCalculator";
@@ -475,6 +444,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q53E8Y7A46;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = 1RMCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.1rmcalculator.-RMCalculator";
